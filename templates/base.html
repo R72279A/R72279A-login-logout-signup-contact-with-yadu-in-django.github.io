@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/defaultstyle.css">
+    <link rel="shortcut icon" href="../static/favicon.png.png" type="image/x-icon">
+    {% block link %}
+
+    {% endblock link %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        
+    {% endblock title %}| UcoderX.com
+    </title>
+</head>
+
+<body>
+    {% block navbar %}
+    <header class="header" id="header">
+        <ul>
+            <li class="active">
+                UcoderX.com
+            </li>
+            <li> <a href="/"> Home </a> </li>
+            <li> <a href="services"> Services </a> </li>
+            {% if user.is_authenticated %}
+            <li> <a href="contact"> Make Website </a> </li>
+            <li> <a href="logout"> logout </a> </li>
+            {% else %}
+            <li> <a href="signup"> Sign Up </a> </li>
+            <li> <a href="login"> Login </a> </li>
+            {% endif %}
+        </ul>
+    </header>
+    {% endblock navbar %}
+    {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}><h1>{{ message }}</h1></li>
+    {% endfor %}
+</ul>
+{% endif %}
+    {% block body %}
+        
+    {% endblock body %}
+</body>
+
+</html>

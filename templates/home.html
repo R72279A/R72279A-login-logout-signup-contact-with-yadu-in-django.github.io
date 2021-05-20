@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block link %}
+{% endblock link %}
+{% block title %}
+    Home
+{% endblock title %}
+{% block body %}
+<section class="Home">
+{% if user.is_authenticated %}
+    <h1 class="h1">
+        Hi!🙋‍♂️🙋‍♂️{{request.user}}
+    <h3 class="h3">Our Fast & Secure Services</h3><br>
+    <a href="contact" target="_blank" rel="noopener noreferrer" class="link"> Make Website </a>
+    </h1><br>
+{% else %}
+    <h1 class="h1">
+        Login Or Sign Up & Enjoy
+    </h1><br> 
+    <h3 class="h3">Our Fast & Secure Services</h3><br>
+    <a href="login" target="_blank" rel="noopener noreferrer" class="link"> Lgin. </a>
+    <a href="signup" target="_blank" rel="noopener noreferrer" class="link2"> Sign Up </a>
+{% endif %}
+</section>
+<section class="about">
+    <h1 class="h1">
+        
+    </h1>
+</section>
+{% endblock body %}

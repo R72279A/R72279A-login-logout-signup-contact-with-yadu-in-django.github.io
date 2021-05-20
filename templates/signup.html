@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block link %}
+{% endblock link %}
+{% block title %}
+    Sign Up.
+{% endblock title %}
+{% block body %}
+<section class="signup">
+    <h1 class="h1">Sign Up.</h1>
+    <div class="form">
+        <form action="/signup" method="POST">
+        {% csrf_token %}
+            <h2 for="username">Enter Your Name.</h2>
+            <input type="text" name="username" id="username" placeholder="Enter Your Name." required>
+            <h2 for="email">Enter Your Email.</h2>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Id." required>
+            <h2 for="password1">Enter Your Password.</h2>
+            <input type="password" name="password1" id="password1" placeholder="Enter Your Password." required>
+            <h2 for="password2">Confirm Your Password.</h2>
+            <input type="password" name="password2" id="password2" placeholder="(Confirm) Password." required>
+            <button type="submit" value="submit" class="button"> Sign Up </button>
+        </form>
+    </div>
+</section>
+{% endblock body %}

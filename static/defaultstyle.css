@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+.header{
+    background-color: #1b1b1b;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-left: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+.header ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+.header ul li{
+    justify-content: space-around;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+.header ul li a{
+    margin: 10px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    justify-content: space-around;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    transition: 0.7s;
+}
+.active{
+    color: #fdfdfd;
+    margin: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 30px;
+    cursor: default;
+    padding-right: 17px;
+    justify-content: space-around;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    transition: 0.7s;
+}
+.header ul li a:hover{
+    color: #fdfdfd;
+    background-color: #3366ff;
+}
+.active:hover{
+    border: #fdfdfd;
+    color: #fdfdfd;
+    background-color: #000;
+}
+
+/* Home Page */
+
+.Home{
+    background-image: url("../static/woman-1245817.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.Home .h1{
+    font-weight: bold;
+    padding-top: 20%;
+    font-size: 3vw;
+    text-align: center;
+    align-items: center;
+}
+.Home .h3{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+    transition: 0.3s;
+}
+.link:hover{
+    background-color: #3366ff;
+    color: #fff;
+    border: 2px solid #000;
+}
+.link2{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: #000;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.link2:hover{
+    background-color: #3366ff;
+    color: #fff;
+    border: 2px solid #000;  
+}
+
+/* Services Page */
+
+.services .h1{
+    font-weight: bold;
+    padding-top: 4%;
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+}
+.services .top{
+    margin-left: 90px;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+.div1{
+    padding: 20px 20px;
+    margin: 20px 20px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    transition: 0.7s;
+}
+.div1:hover{
+    transform: translateY(-17px);
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/* Contact Us */
+
+.contact .h1{
+    font-weight: bold;
+    padding-top: 4%;
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+}
+.form{
+    text-align: center;
+    align-items: center;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    width: fit-content;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 40px 20px;
+    transition: 00.7s;
+}
+#name{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#email{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#desc {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: default;
+}
+.form:hover{
+    transform: translateY(-17px);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/* Signup */
+
+#username{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#email{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#password1{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#password2{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: default;
+}
+.signup .h1{
+    font-weight: bold;
+    padding-top: 4%;
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+}
+
+/* Login */
+
+#loginusername{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#loginpassword{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login .h1{
+    font-weight: bold;
+    padding-top: 4%;
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+}
