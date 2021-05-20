@@ -7,7 +7,7 @@ Step 1 :- You have to first need to install Python from:- https://www.python.org
 Step 2 :- Open your Pawershell window and type pip install Django.
 Step 3 :- Check the virdion of your django to check type :- django-admin --version.
 Step 4 :- Make sure that your Django must be 3.2.3.
-Step 5 :- Now go to the folder were you extracted this code & press Shift + Left Click This will open your Pawer Shell Window 
+Step 5 :- Now go to the folder were you extracted this code & press Shift + Right Click This will open your Pawer Shell Window 
            on this folder.
 Step 6 :- Now type " python manage.py migrate " in the Pawer Shell.
 Step 7 :- Now type " python manage.py makemigrations " in the Pawer Shell.
